@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal Blog</title>
+    <link>http://blog.svohra.com/</link>
+    <description>Recent content on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Jan 2021 14:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://blog.svohra.com/posts/my-first-post/</link>
+      <pubDate>Sat, 30 Jan 2021 14:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/my-first-post/</guid>
+      <description>This purpose of this site is to serve few different purposes.
+ The first is to serve as my personal reference for a quick refresher of technical topics I come across as I tend to forget quite easily. The second is to serve as a blog where I want to refine my perspective and observations about life.  </description>
+    </item>
+    
+  </channel>
+</rss>
