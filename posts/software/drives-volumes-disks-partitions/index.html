@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Drives, Volumes, Disks &amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
+Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
+Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Drives, Volumes, Disks &amp; Partitions" />
+<meta property="og:description" content="Drives, Volumes, Disks &amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
+Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
+Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/" />
+
+<title>Drives, Volumes, Disks &amp; Partitions | Personal Blog</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
+<script defer src="/en.search.min.ebe5e1ae0c945625020f7bffe16eedf00f62d105375a37bd83a1ed7de87bfb4f.js" integrity="sha256-6&#43;XhrgyUViUCD3v/4W7t8A9i0QU3Wje9g6Htfeh7&#43;08="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Personal Blog</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Drives, Volumes, Disks &amp; Partitions</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#drive">Drive</a></li>
+    <li><a href="#partions">Partions</a></li>
+    <li><a href="#volume">Volume</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#mount">Mount</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/software/drives-volumes-disks-partitions/">Drives, Volumes, Disks &amp; Partitions</a>
+  </h1>
+  
+
+
+  
+  <div>
+    
+      <a href="/categories/software/">Software</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/tech/">Tech</a>, 
+      <a href="/tags/storage/">Storage</a>
+  </div>
+  
+
+
+  <p><h1 id="drives-volumes-disks--partitions">
+  Drives, Volumes, Disks &amp; Partitions
+  <a class="anchor" href="#drives-volumes-disks--partitions">#</a>
+</h1>
+<h2 id="drive">
+  Drive
+  <a class="anchor" href="#drive">#</a>
+</h2>
+<p>Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the  <code>/dev directory</code></p>
+<h2 id="partions">
+  Partions
+  <a class="anchor" href="#partions">#</a>
+</h2>
+<p>A physical storage device can be divided into multiple logical storage units known as partitions.</p>
+<h2 id="volume">
+  Volume
+  <a class="anchor" href="#volume">#</a>
+</h2>
+<p>The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices. A physical volume is a storage device or partition. A logical volume created by the LVM is a logical storage device which can span multiple physical volumes.</p>
+<p><em>Volume</em> implies formatting while a <em>partition</em> does not</p>
+<h1 id="on-linux">
+  On Linux
+  <a class="anchor" href="#on-linux">#</a>
+</h1>
+<pre><code>/dev/sda1
+
+`sd` SCSI device
+`a`	 First drive detected by the OS
+`1`	 First partition 
+</code></pre>
+<h2 id="mount">
+  Mount
+  <a class="anchor" href="#mount">#</a>
+</h2>
+<p>Mount provides the filesystem on some device to be accessible at some path on a unix system. It places the root of the filesytem of the device at the specified path
+<code>mount -t type device dir</code></p>
+<p>here,</p>
+<ul>
+<li><code>type</code> is the device&rsquo;s type</li>
+<li><code>dir</code> is the path to make the files available at</li>
+</ul>
+<p><code>findmnt</code> can be used to list all the mounts</p>
+<p>Mounts unlike symbolic links <code>ln -s</code> can be accessed with <code>chroot</code> operations</p>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://unix.stackexchange.com/questions/87300/differences-between-volume-partition-and-drive">differences-between-volume-partition-and-drive</a></li>
+<li><a href="http://man7.org/linux/man-pages/man8/mount.8.html">Mount man page</a></li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#drive">Drive</a></li>
+    <li><a href="#partions">Partions</a></li>
+    <li><a href="#volume">Volume</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#mount">Mount</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

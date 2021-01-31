@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 07 Nov 2020 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CKAD Exam Preparation</title>
-      <link>http://blog.svohra.com/posts/ckad-exam-prep/</link>
+      <link>http://blog.svohra.com/posts/software/ckad-exam-prep/</link>
       <pubDate>Sat, 07 Nov 2020 20:50:37 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/posts/ckad-exam-prep/</guid>
+      <guid>http://blog.svohra.com/posts/software/ckad-exam-prep/</guid>
       <description>The process #  Study #  Took Mumshad&amp;rsquo;s super popular CKAD preparation course. It introduced the relevant kubernetes concepts and the labs at the end of each section were great for reinforcing the material. At $20 the course was a steal 🔥🔥🔥. This was the only resource I used and I passed the exam 🎉.
 Practice #  From reading about the exam online and from the mock exams in Mumshad&amp;rsquo;s course, I realized that the exam is not hard but you have to be fast.</description>
     </item>
@@ -29,10 +29,10 @@ What you should know 🤔 #  Soon #   Get your Social Security Number (SSN) card
     
     <item>
       <title>CKAD Notes</title>
-      <link>http://blog.svohra.com/posts/ckad-notes/</link>
+      <link>http://blog.svohra.com/posts/software/ckad-notes/</link>
       <pubDate>Tue, 15 Sep 2020 18:15:37 -0500</pubDate>
       
-      <guid>http://blog.svohra.com/posts/ckad-notes/</guid>
+      <guid>http://blog.svohra.com/posts/software/ckad-notes/</guid>
       <description>Sparse CKAD Notes #  Node #  Runs the containers deployed on K8s. It is the worker
 Kubelet #  Agent running on the node that monitors health of pods and running pods on the container runtime
 Container Runtime #  Engine that runs the containers
@@ -42,10 +42,10 @@ API Server #  Receives all incoming API requests and is the frontend to K8s clus
     
     <item>
       <title>Networking</title>
-      <link>http://blog.svohra.com/posts/networking/</link>
+      <link>http://blog.svohra.com/posts/software/networking/</link>
       <pubDate>Tue, 25 Feb 2020 19:16:42 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/posts/networking/</guid>
+      <guid>http://blog.svohra.com/posts/software/networking/</guid>
       <description>Debugging #  Monitor Sockets #  ss
  Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
   Get all TCP connections on a host netstat -t
@@ -54,10 +54,10 @@ API Server #  Receives all incoming API requests and is the frontend to K8s clus
     
     <item>
       <title>Shell Commands</title>
-      <link>http://blog.svohra.com/posts/cmd/</link>
+      <link>http://blog.svohra.com/posts/software/cmd/</link>
       <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/posts/cmd/</guid>
+      <guid>http://blog.svohra.com/posts/software/cmd/</guid>
       <description>General #    switch user su some-user-name
   execute previous command !!
   List file system mounts findmnt
@@ -78,10 +78,10 @@ Taxes on stock options are calculated based on the delta between Excercise Price
     
     <item>
       <title>Drives, Volumes, Disks &amp; Partitions</title>
-      <link>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</link>
+      <link>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</guid>
+      <guid>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</guid>
       <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
 Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
 Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.</description>

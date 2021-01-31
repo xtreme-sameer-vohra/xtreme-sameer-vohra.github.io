@@ -9,20 +9,20 @@
     <lastBuildDate>Sat, 07 Nov 2020 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CKAD Exam Preparation</title>
-      <link>http://blog.svohra.com/posts/ckad-exam-prep/</link>
+      <link>http://blog.svohra.com/posts/software/ckad-exam-prep/</link>
       <pubDate>Sat, 07 Nov 2020 20:50:37 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/posts/ckad-exam-prep/</guid>
+      <guid>http://blog.svohra.com/posts/software/ckad-exam-prep/</guid>
       <description>The process #  Study #  Took Mumshad&amp;rsquo;s super popular CKAD preparation course. It introduced the relevant kubernetes concepts and the labs at the end of each section were great for reinforcing the material. At $20 the course was a steal 🔥🔥🔥. This was the only resource I used and I passed the exam 🎉.
 Practice #  From reading about the exam online and from the mock exams in Mumshad&amp;rsquo;s course, I realized that the exam is not hard but you have to be fast.</description>
     </item>
     
     <item>
       <title>CKAD Notes</title>
-      <link>http://blog.svohra.com/posts/ckad-notes/</link>
+      <link>http://blog.svohra.com/posts/software/ckad-notes/</link>
       <pubDate>Tue, 15 Sep 2020 18:15:37 -0500</pubDate>
       
-      <guid>http://blog.svohra.com/posts/ckad-notes/</guid>
+      <guid>http://blog.svohra.com/posts/software/ckad-notes/</guid>
       <description>Sparse CKAD Notes #  Node #  Runs the containers deployed on K8s. It is the worker
 Kubelet #  Agent running on the node that monitors health of pods and running pods on the container runtime
 Container Runtime #  Engine that runs the containers
