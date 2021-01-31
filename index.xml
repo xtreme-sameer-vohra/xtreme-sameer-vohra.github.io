@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Personal Blog</title>
+    <title>Introduction on Personal Blog</title>
     <link>http://blog.svohra.com/</link>
-    <description>Recent content on Personal Blog</description>
+    <description>Recent content in Introduction on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 14:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Nov 2020 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>http://blog.svohra.com/posts/my-first-post/</link>
-      <pubDate>Sat, 30 Jan 2021 14:50:37 -0600</pubDate>
+      <title>CKAD Exam Preparation</title>
+      <link>http://blog.svohra.com/posts/ckad-exam-prep/</link>
+      <pubDate>Sat, 07 Nov 2020 20:50:37 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/posts/my-first-post/</guid>
-      <description>This purpose of this site is to serve few different purposes.
- The first is to serve as my personal reference for a quick refresher of technical topics I come across as I tend to forget quite easily. The second is to serve as a blog where I want to refine my perspectives and observations.  </description>
+      <guid>http://blog.svohra.com/posts/ckad-exam-prep/</guid>
+      <description>The process #  Study #  Took Mumshad&amp;rsquo;s super popular CKAD preparation course. It introduced the relevant kubernetes concepts and the labs at the end of each section were great for reinforcing the material. At $20 the course was a steal. This was the only resource I used and I passed the exam.
+Practice #  From reading about the exam online and from the mock exams in Mumshad&amp;rsquo;s course, I realized that the exam is not hard but you have to be fast.</description>
+    </item>
+    
+    <item>
+      <title>CKAD</title>
+      <link>http://blog.svohra.com/posts/ckad-notes/</link>
+      <pubDate>Tue, 15 Sep 2020 18:15:37 -0500</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/ckad-notes/</guid>
+      <description>Sparse CKAD Notes #  Node #  Runs the containers deployed on K8s. It is the worker
+Kubelet #  Agent running on the node that monitors health of pods and running pods on the container runtime
+Container Runtime #  Engine that runs the containers
+Master #  Handles all requests and is the brains that orchestrates work on the workers
+API Server #  Receives all incoming API requests and is the frontend to K8s cluster</description>
     </item>
     
   </channel>

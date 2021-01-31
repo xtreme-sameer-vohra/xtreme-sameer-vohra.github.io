@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sparse CKAD Notes #  Node #  Runs the containers deployed on K8s. It is the worker
+Kubelet #  Agent running on the node that monitors health of pods and running pods on the container runtime
+Container Runtime #  Engine that runs the containers
+Master #  Handles all requests and is the brains that orchestrates work on the workers
+API Server #  Receives all incoming API requests and is the frontend to K8s cluster">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="CKAD" />
+<meta property="og:description" content="Sparse CKAD Notes #  Node #  Runs the containers deployed on K8s. It is the worker
+Kubelet #  Agent running on the node that monitors health of pods and running pods on the container runtime
+Container Runtime #  Engine that runs the containers
+Master #  Handles all requests and is the brains that orchestrates work on the workers
+API Server #  Receives all incoming API requests and is the frontend to K8s cluster" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.svohra.com/posts/ckad-notes/" />
+<meta property="article:published_time" content="2020-09-15T18:15:37-05:00" />
+<meta property="article:modified_time" content="2020-09-15T18:15:37-05:00" />
+<title>CKAD | Personal Blog</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
+<script defer src="/en.search.min.9febda935973a58d8148bc3ccb94c22a633888e12b90b966d9755efabe8f5244.js" integrity="sha256-n&#43;vak1lzpY2BSLw8y5TCKmM4iOErkLlm2XVe&#43;r6PUkQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Personal Blog</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>CKAD</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#node">Node</a>
+      <ul>
+        <li><a href="#kubelet">Kubelet</a></li>
+        <li><a href="#container-runtime">Container Runtime</a></li>
+      </ul>
+    </li>
+    <li><a href="#master">Master</a>
+      <ul>
+        <li><a href="#api-server">API Server</a></li>
+        <li><a href="#controller">Controller</a></li>
+        <li><a href="#scheduler">Scheduler</a></li>
+        <li><a href="#etcd-service">Etcd Service</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#yaml-in-k8s">YAML in K8s</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#dockerfile">Dockerfile</a></li>
+    <li><a href="#ingress">Ingress</a></li>
+    <li><a href="#network-policies">Network Policies</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/ckad-notes/">CKAD</a>
+  </h1>
+  
+  <h5>September 15, 2020</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/software/">Software</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/tech/">Tech</a>, 
+      <a href="/tags/kubernetes/">Kubernetes</a>, 
+      <a href="/tags/ckad/">CKAD</a>
+  </div>
+  
+
+
+  <p><h1 id="sparse-ckad-notes">
+  Sparse CKAD Notes
+  <a class="anchor" href="#sparse-ckad-notes">#</a>
+</h1>
+<h2 id="node">
+  Node
+  <a class="anchor" href="#node">#</a>
+</h2>
+<p>Runs the containers deployed on K8s. It is the worker</p>
+<h3 id="kubelet">
+  Kubelet
+  <a class="anchor" href="#kubelet">#</a>
+</h3>
+<p>Agent running on the node that monitors health of pods and running pods on the container runtime</p>
+<h3 id="container-runtime">
+  Container Runtime
+  <a class="anchor" href="#container-runtime">#</a>
+</h3>
+<p>Engine that runs the containers</p>
+<h2 id="master">
+  Master
+  <a class="anchor" href="#master">#</a>
+</h2>
+<p>Handles all requests and is the brains that orchestrates work on the workers</p>
+<h3 id="api-server">
+  API Server
+  <a class="anchor" href="#api-server">#</a>
+</h3>
+<p>Receives all incoming API requests and is the frontend to K8s cluster</p>
+<h3 id="controller">
+  Controller
+  <a class="anchor" href="#controller">#</a>
+</h3>
+<p>The brains, ensure that what the cluster is running and what is desired keep converging</p>
+<h3 id="scheduler">
+  Scheduler
+  <a class="anchor" href="#scheduler">#</a>
+</h3>
+<p>Assigns work to the Nodes based on their capacity and work affinity</p>
+<h3 id="etcd-service">
+  Etcd Service
+  <a class="anchor" href="#etcd-service">#</a>
+</h3>
+<p>Key/value store that is used for all state in K8s cluster
+Holds locks for distributed work</p>
+<h1 id="misc">
+  Misc
+  <a class="anchor" href="#misc">#</a>
+</h1>
+<h2 id="yaml-in-k8s">
+  YAML in K8s
+  <a class="anchor" href="#yaml-in-k8s">#</a>
+</h2>
+<ul>
+<li><em>apiVersion</em> - K8s version that defines object</li>
+<li><em>kind</em> - type of object (eg Pod)</li>
+<li><em>metadata</em> - name, labels</li>
+<li><em>spec</em>  - defintion of the object</li>
+</ul>
+<h2 id="services">
+  Services
+  <a class="anchor" href="#services">#</a>
+</h2>
+<ul>
+<li><em>NodePort</em> - assigns that nodePort on every node so that a service can be accessed via the node IP</li>
+<li><em>clusterIP</em> - the default, picks an IP from the pod CIDR and uses that for the service</li>
+<li><em>Loadbalancer</em> - uses the external IaaS to create a loadbalancer</li>
+</ul>
+<h2 id="dockerfile">
+  Dockerfile
+  <a class="anchor" href="#dockerfile">#</a>
+</h2>
+<ul>
+<li><code>entrypoint</code> == <code>cmd</code> in pod</li>
+<li><code>cmd</code> == <code>args</code> in pod</li>
+</ul>
+<h2 id="ingress">
+  Ingress
+  <a class="anchor" href="#ingress">#</a>
+</h2>
+<p>More advanced solution compared to service to handle path based routing, host based routing, etc to multiple pods</p>
+<h2 id="network-policies">
+  Network Policies
+  <a class="anchor" href="#network-policies">#</a>
+</h2>
+<p>Firewall rules for a cluster</p>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#node">Node</a>
+      <ul>
+        <li><a href="#kubelet">Kubelet</a></li>
+        <li><a href="#container-runtime">Container Runtime</a></li>
+      </ul>
+    </li>
+    <li><a href="#master">Master</a>
+      <ul>
+        <li><a href="#api-server">API Server</a></li>
+        <li><a href="#controller">Controller</a></li>
+        <li><a href="#scheduler">Scheduler</a></li>
+        <li><a href="#etcd-service">Etcd Service</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#yaml-in-k8s">YAML in K8s</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#dockerfile">Dockerfile</a></li>
+    <li><a href="#ingress">Ingress</a></li>
+    <li><a href="#network-policies">Network Policies</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

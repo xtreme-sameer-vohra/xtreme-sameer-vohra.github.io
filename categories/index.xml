@@ -5,6 +5,16 @@
     <link>http://blog.svohra.com/categories/</link>
     <description>Recent content in Categories on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://blog.svohra.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Nov 2020 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software</title>
+      <link>http://blog.svohra.com/categories/software/</link>
+      <pubDate>Sat, 07 Nov 2020 20:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/categories/software/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
