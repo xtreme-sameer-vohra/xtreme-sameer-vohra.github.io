@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshooting on Personal Blog</title>
+    <link>http://blog.svohra.com/tags/troubleshooting/</link>
+    <description>Recent content in Troubleshooting on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Feb 2020 19:16:42 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking</title>
+      <link>http://blog.svohra.com/posts/networking/</link>
+      <pubDate>Tue, 25 Feb 2020 19:16:42 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/networking/</guid>
+      <description>Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s</description>
+    </item>
+    
+  </channel>
+</rss>

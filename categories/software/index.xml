@@ -31,6 +31,18 @@ API Server #  Receives all incoming API requests and is the frontend to K8s clus
     </item>
     
     <item>
+      <title>Networking</title>
+      <link>http://blog.svohra.com/posts/networking/</link>
+      <pubDate>Tue, 25 Feb 2020 19:16:42 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/networking/</guid>
+      <description>Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s</description>
+    </item>
+    
+    <item>
       <title>Shell Commands</title>
       <link>http://blog.svohra.com/posts/cmd/</link>
       <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>

@@ -6,17 +6,17 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Storage" />
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Networking" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://blog.svohra.com/tags/storage/" />
-
-<title>Storage | Personal Blog</title>
+<meta property="og:url" content="http://blog.svohra.com/tags/networking/" />
+<meta property="og:updated_time" content="2020-02-25T19:16:42-06:00" />
+<title>Networking | Personal Blog</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
 <script defer src="/en.search.min.8f94668ab6fbfcac6e0fb9adb661b22cdf08788e3da5c152ca12a3a3959704ef.js" integrity="sha256-j5Rmirb7/KxuD7mttmGyLN8IeI49pcFSyhKjo5WXBO8="></script>
-<link rel="alternate" type="application/rss+xml" href="http://blog.svohra.com/tags/storage/index.xml" title="Personal Blog" />
+<link rel="alternate" type="application/rss+xml" href="http://blog.svohra.com/tags/networking/index.xml" title="Personal Blog" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -88,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Storage</strong>
+  <strong>Networking</strong>
 
   <label for="toc-control">
     
@@ -176,9 +176,11 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/drives-volumes-disks-partitions/">Drives, Volumes, Disks &amp; Partitions</a>
+      <a href="/posts/networking/">Networking</a>
     </h2>
     
+  <h5>February 25, 2020</h5>
+
 
 
   
@@ -192,15 +194,17 @@ https://github.com/alex-shpak/hugo-book
   <div>
     
       <a href="/tags/tech/">Tech</a>, 
-      <a href="/tags/storage/">Storage</a>
+      <a href="/tags/networking/">Networking</a>, 
+      <a href="/tags/troubleshooting/">Troubleshooting</a>
   </div>
   
 
 
-    <p>Drives, Volumes, Disks &amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
-Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
-Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.
-        <a href="/posts/drives-volumes-disks-partitions/">...</a>
+    <p>Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s
+        <a href="/posts/networking/">...</a>
       
     </p>
   </article>

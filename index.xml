@@ -6,19 +6,7 @@
     <description>Recent content in Introduction on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Jan 2021 22:30:56 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Networking</title>
-      <link>http://blog.svohra.com/posts/networking/</link>
-      <pubDate>Sat, 30 Jan 2021 22:30:56 -0600</pubDate>
-      
-      <guid>http://blog.svohra.com/posts/networking/</guid>
-      <description>Debugging #  Monitor Sockets #  ss
- Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
-  Get all TCP connections on a host netstat -t
- Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s</description>
-    </item>
-    
+    <lastBuildDate>Sat, 07 Nov 2020 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CKAD Exam Preparation</title>
       <link>http://blog.svohra.com/posts/ckad-exam-prep/</link>
@@ -40,6 +28,18 @@ Kubelet #  Agent running on the node that monitors health of pods and running po
 Container Runtime #  Engine that runs the containers
 Master #  Handles all requests and is the brains that orchestrates work on the workers
 API Server #  Receives all incoming API requests and is the frontend to K8s cluster</description>
+    </item>
+    
+    <item>
+      <title>Networking</title>
+      <link>http://blog.svohra.com/posts/networking/</link>
+      <pubDate>Tue, 25 Feb 2020 19:16:42 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/networking/</guid>
+      <description>Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s</description>
     </item>
     
     <item>
