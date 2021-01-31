@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Networking" />
+<meta property="og:description" content="Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.svohra.com/posts/networking/" />
+<meta property="article:published_time" content="2021-01-30T22:30:56-06:00" />
+<meta property="article:modified_time" content="2021-01-30T22:30:56-06:00" />
+<title>Networking | Personal Blog</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
+<script defer src="/en.search.min.dc12a2b9e66d15b3ae384dd0c2978482b50aa6f09c96c83f50a9b37cc24a1297.js" integrity="sha256-3BKiueZtFbOuOE3QwpeEgrUKpvCclsg/UKmzfMJKEpc="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Personal Blog</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Networking</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#monitor-sockets">Monitor Sockets</a></li>
+    <li><a href="#monitor-tcp-connections">Monitor TCP Connections</a></li>
+    <li><a href="#monitor-tcp-packets">Monitor TCP Packets</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#references">References</a>
+      <ul>
+        <li><a href="#tcp-keepalivehttptldporghowtotcp-keepalive-howtooverviewhtml"><a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">TCP Keepalive</a></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/networking/">Networking</a>
+  </h1>
+  
+  <h5>January 30, 2021</h5>
+
+
+
+  
+
+  
+
+
+  <p><h1 id="debugging">
+  Debugging
+  <a class="anchor" href="#debugging">#</a>
+</h1>
+<h2 id="monitor-sockets">
+  Monitor Sockets
+  <a class="anchor" href="#monitor-sockets">#</a>
+</h2>
+<p><a href="http://man7.org/linux/man-pages/man8/ss.8.html">ss</a></p>
+<ul>
+<li>Get all outbound TCP connections to a HOST:PORT combination  <code>ss -it | grep SOME_PORT_NUMBER</code></li>
+</ul>
+<h2 id="monitor-tcp-connections">
+  Monitor TCP Connections
+  <a class="anchor" href="#monitor-tcp-connections">#</a>
+</h2>
+<p><a href="http://man7.org/linux/man-pages/man8/netstat.8.html">netstat</a></p>
+<ul>
+<li>
+<p>Get all TCP connections on a host <code>netstat -t</code></p>
+<ul>
+<li>Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written</li>
+<li><code>-o</code> adds timer info and connection state</li>
+</ul>
+</li>
+<li>
+<p>Get Summary, good starting point to see if there are dropped packets <code>netstat -s</code></p>
+</li>
+</ul>
+<h2 id="monitor-tcp-packets">
+  Monitor TCP Packets
+  <a class="anchor" href="#monitor-tcp-packets">#</a>
+</h2>
+<p><a href="http://man7.org/linux/man-pages/man1/tcpdump.1.html">tcpdump</a></p>
+<ul>
+<li>Monitor all packets on eth0 in verbose mode <code>tcpdump -vvi eth0</code></li>
+</ul>
+<h1 id="benchmarking-http-requests">
+  Benchmarking HTTP requests
+  <a class="anchor" href="#benchmarking-http-requests">#</a>
+</h1>
+<p><a href="https://github.com/davecheney/httpstat">httpstat</a></p>
+<h1 id="nat-box">
+  NAT Box
+  <a class="anchor" href="#nat-box">#</a>
+</h1>
+<p><a href="https://linux.die.net/man/1/netstat-nat">netstat-nat</a></p>
+<h1 id="port-forwarding">
+  Port Forwarding
+  <a class="anchor" href="#port-forwarding">#</a>
+</h1>
+<p><strong>Local Port Forward</strong> Access a port on a remote server accessible via a gateway</p>
+<p><code>ssh -f userName@gateway -L localMachinePort:remoteHost:remoteMachinePort -N</code></p>
+<ul>
+<li><code>gateway</code> is the middle server accessible from the host</li>
+<li><code>remoteHost</code> is the server accessible through gateway</li>
+<li><code>localMachinePort</code> is the port on your local machine from where the command is run</li>
+<li><code>remoteMachinePort</code> is the port on the remoteHost to connect to</li>
+</ul>
+<h2 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h2>
+<h3 id="tcp-keepalivehttptldporghowtotcp-keepalive-howtooverviewhtml">
+  <a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">TCP Keepalive</a>
+  <a class="anchor" href="#tcp-keepalivehttptldporghowtotcp-keepalive-howtooverviewhtml">#</a>
+</h3>
+<ul>
+<li>Purpose of keepalive is;
+<ul>
+<li>detect a peer who has disappeared abruptly</li>
+<li>prevent intermediate components from getting rid of a connection (eg. NAT idle timeout )</li>
+</ul>
+</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#monitor-sockets">Monitor Sockets</a></li>
+    <li><a href="#monitor-tcp-connections">Monitor TCP Connections</a></li>
+    <li><a href="#monitor-tcp-packets">Monitor TCP Packets</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#references">References</a>
+      <ul>
+        <li><a href="#tcp-keepalivehttptldporghowtotcp-keepalive-howtooverviewhtml"><a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">TCP Keepalive</a></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

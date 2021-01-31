@@ -6,17 +6,17 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
-<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Posts" />
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Shell" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://blog.svohra.com/posts/" />
-<meta property="og:updated_time" content="2021-01-30T22:30:56-06:00" />
-<title>Posts | Personal Blog</title>
+<meta property="og:url" content="http://blog.svohra.com/tags/shell/" />
+<meta property="og:updated_time" content="2019-10-18T09:25:45-06:00" />
+<title>Shell | Personal Blog</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
 <script defer src="/en.search.min.dc12a2b9e66d15b3ae384dd0c2978482b50aa6f09c96c83f50a9b37cc24a1297.js" integrity="sha256-3BKiueZtFbOuOE3QwpeEgrUKpvCclsg/UKmzfMJKEpc="></script>
-<link rel="alternate" type="application/rss+xml" href="http://blog.svohra.com/posts/index.xml" title="Personal Blog" />
+<link rel="alternate" type="application/rss+xml" href="http://blog.svohra.com/tags/shell/index.xml" title="Personal Blog" />
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -56,7 +56,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <ul>
-<li><a href="/posts/"class=active>Blog</a></li>
+<li><a href="/posts/">Blog</a></li>
 </ul>
 
 
@@ -88,7 +88,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>Posts</strong>
+  <strong>Shell</strong>
 
   <label for="toc-control">
     
@@ -166,98 +166,6 @@ https://github.com/alex-shpak/hugo-book
   
   <article class="markdown book-post">
     <h2>
-      <a href="/posts/networking/">Networking</a>
-    </h2>
-    
-  <h5>January 30, 2021</h5>
-
-
-
-  
-
-  
-
-
-    <p>Debugging #  Monitor Sockets #  ss
- Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
-  Get all TCP connections on a host netstat -t
- Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s
-        <a href="/posts/networking/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/ckad-exam-prep/">CKAD Exam Preparation</a>
-    </h2>
-    
-  <h5>November 7, 2020</h5>
-
-
-
-  
-  <div>
-    
-      <a href="/categories/software/">Software</a>
-  </div>
-  
-
-  
-  <div>
-    
-      <a href="/tags/tech/">Tech</a>, 
-      <a href="/tags/kubernetes/">Kubernetes</a>, 
-      <a href="/tags/ckad/">CKAD</a>
-  </div>
-  
-
-
-    <p>The process #  Study #  Took Mumshad&rsquo;s super popular CKAD preparation course. It introduced the relevant kubernetes concepts and the labs at the end of each section were great for reinforcing the material. At $20 the course was a steal 🔥🔥🔥. This was the only resource I used and I passed the exam 🎉.
-Practice #  From reading about the exam online and from the mock exams in Mumshad&rsquo;s course, I realized that the exam is not hard but you have to be fast.
-        <a href="/posts/ckad-exam-prep/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/ckad-notes/">CKAD Notes</a>
-    </h2>
-    
-  <h5>September 15, 2020</h5>
-
-
-
-  
-  <div>
-    
-      <a href="/categories/software/">Software</a>
-  </div>
-  
-
-  
-  <div>
-    
-      <a href="/tags/tech/">Tech</a>, 
-      <a href="/tags/kubernetes/">Kubernetes</a>, 
-      <a href="/tags/ckad/">CKAD</a>
-  </div>
-  
-
-
-    <p>Sparse CKAD Notes #  Node #  Runs the containers deployed on K8s. It is the worker
-Kubelet #  Agent running on the node that monitors health of pods and running pods on the container runtime
-Container Runtime #  Engine that runs the containers
-Master #  Handles all requests and is the brains that orchestrates work on the workers
-API Server #  Receives all incoming API requests and is the frontend to K8s cluster
-        <a href="/posts/ckad-notes/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
       <a href="/posts/cmd/">Shell Commands</a>
     </h2>
     
@@ -288,37 +196,6 @@ API Server #  Receives all incoming API requests and is the frontend to K8s clus
  $1 refers to column 1 &amp; $2 refers to column 2, starting from index 0    Search #    Find File find path_to_search -name &quot;*.txt&quot; 
  -not to inverse results -maxdepth some_int to limit depth of search -size +1M find files larger than 1 MB -type f|d find files or directories `-exec grep -n -i &ldquo;foo&rdquo;    Grep grep -i &quot;string_to_be_searched&quot; path_to_search
         <a href="/posts/cmd/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
-      <a href="/posts/drives-volumes-disks-partitions/">Drives, Volumes, Disks &amp; Partitions</a>
-    </h2>
-    
-
-
-  
-  <div>
-    
-      <a href="/categories/software/">Software</a>
-  </div>
-  
-
-  
-  <div>
-    
-      <a href="/tags/tech/">Tech</a>, 
-      <a href="/tags/storage/">Storage</a>
-  </div>
-  
-
-
-    <p>Drives, Volumes, Disks &amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
-Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
-Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.
-        <a href="/posts/drives-volumes-disks-partitions/">...</a>
       
     </p>
   </article>

@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 07 Nov 2020 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jan 2021 22:30:56 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking</title>
+      <link>http://blog.svohra.com/posts/networking/</link>
+      <pubDate>Sat, 30 Jan 2021 22:30:56 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/networking/</guid>
+      <description>Debugging #  Monitor Sockets #  ss
+ Get all outbound TCP connections to a HOST:PORT combination ss -it | grep SOME_PORT_NUMBER  Monitor TCP Connections #  netstat
+  Get all TCP connections on a host netstat -t
+ Observe the Send-Q and Recv-Q to see how many bytes are waiting to be read/written -o adds timer info and connection state    Get Summary, good starting point to see if there are dropped packets netstat -s</description>
+    </item>
+    
     <item>
       <title>CKAD Exam Preparation</title>
       <link>http://blog.svohra.com/posts/ckad-exam-prep/</link>
@@ -28,6 +40,31 @@ Kubelet #  Agent running on the node that monitors health of pods and running po
 Container Runtime #  Engine that runs the containers
 Master #  Handles all requests and is the brains that orchestrates work on the workers
 API Server #  Receives all incoming API requests and is the frontend to K8s cluster</description>
+    </item>
+    
+    <item>
+      <title>Shell Commands</title>
+      <link>http://blog.svohra.com/posts/cmd/</link>
+      <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/cmd/</guid>
+      <description>General #    switch user su some-user-name
+  execute previous command !!
+  List file system mounts findmnt
+  Filter results awk &#39;/search_pattern/ {print $2 $1}&#39;
+ $1 refers to column 1 &amp;amp; $2 refers to column 2, starting from index 0    Search #    Find File find path_to_search -name &amp;quot;*.txt&amp;quot; 
+ -not to inverse results -maxdepth some_int to limit depth of search -size +1M find files larger than 1 MB -type f|d find files or directories `-exec grep -n -i &amp;ldquo;foo&amp;rdquo;    Grep grep -i &amp;quot;string_to_be_searched&amp;quot; path_to_search</description>
+    </item>
+    
+    <item>
+      <title>Drives, Volumes, Disks &amp; Partitions</title>
+      <link>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</guid>
+      <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
+Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
+Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.</description>
     </item>
     
   </channel>

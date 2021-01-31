@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shell on Personal Blog</title>
+    <link>http://blog.svohra.com/tags/shell/</link>
+    <description>Recent content in Shell on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Oct 2019 09:25:45 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shell Commands</title>
+      <link>http://blog.svohra.com/posts/cmd/</link>
+      <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/cmd/</guid>
+      <description>General #    switch user su some-user-name
+  execute previous command !!
+  List file system mounts findmnt
+  Filter results awk &#39;/search_pattern/ {print $2 $1}&#39;
+ $1 refers to column 1 &amp;amp; $2 refers to column 2, starting from index 0    Search #    Find File find path_to_search -name &amp;quot;*.txt&amp;quot; 
+ -not to inverse results -maxdepth some_int to limit depth of search -size +1M find files larger than 1 MB -type f|d find files or directories `-exec grep -n -i &amp;ldquo;foo&amp;rdquo;    Grep grep -i &amp;quot;string_to_be_searched&amp;quot; path_to_search</description>
+    </item>
+    
+  </channel>
+</rss>

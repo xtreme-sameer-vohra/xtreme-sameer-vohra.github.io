@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Personal Blog</title>
+    <link>http://blog.svohra.com/tags/storage/</link>
+    <description>Recent content in Storage on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://blog.svohra.com/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drives, Volumes, Disks &amp; Partitions</title>
+      <link>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</guid>
+      <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
+Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
+Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.</description>
+    </item>
+    
+  </channel>
+</rss>

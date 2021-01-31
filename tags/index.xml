@@ -34,5 +34,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Shell</title>
+      <link>http://blog.svohra.com/tags/shell/</link>
+      <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>http://blog.svohra.com/tags/storage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/storage/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

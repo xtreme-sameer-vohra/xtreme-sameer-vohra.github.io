@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.svohra.com/</loc>
+    <lastmod>2021-01-30T22:30:56-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/posts/networking/</loc>
+    <lastmod>2021-01-30T22:30:56-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/posts/</loc>
+    <lastmod>2021-01-30T22:30:56-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.svohra.com/categories/</loc>
     <lastmod>2020-11-07T20:50:37-06:00</lastmod>
   </url>
@@ -18,17 +33,7 @@
   </url>
   
   <url>
-    <loc>http://blog.svohra.com/</loc>
-    <lastmod>2020-11-07T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://blog.svohra.com/tags/kubernetes/</loc>
-    <lastmod>2020-11-07T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.svohra.com/posts/</loc>
     <lastmod>2020-11-07T20:50:37-06:00</lastmod>
   </url>
   
@@ -50,6 +55,24 @@
   <url>
     <loc>http://blog.svohra.com/posts/ckad-notes/</loc>
     <lastmod>2020-09-15T18:15:37-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/shell/</loc>
+    <lastmod>2019-10-18T09:25:45-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/posts/cmd/</loc>
+    <lastmod>2019-10-18T09:25:45-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</loc>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/storage/</loc>
   </url>
   
 </urlset>
