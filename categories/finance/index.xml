@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Finance on Personal Blog</title>
+    <link>http://blog.svohra.com/categories/finance/</link>
+    <description>Recent content in Finance on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Apr 2018 16:15:29 -0400</lastBuildDate><atom:link href="http://blog.svohra.com/categories/finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stock Options</title>
+      <link>http://blog.svohra.com/posts/canada/stock-options/</link>
+      <pubDate>Sun, 15 Apr 2018 16:15:29 -0400</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/canada/stock-options/</guid>
+      <description>I was working at the Canadian branch of a US tech company and part of my compensation was in the form of stock options so I was curious in understanding how they were taxed.
+Taxes on stock options are calculated based on the delta between Excercise Price and Strike Price. 50 % of the delta is taxed as income Stock Option Deduction. So, they are taxed at the same rate as capital gains.</description>
+    </item>
+    
+  </channel>
+</rss>

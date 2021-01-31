@@ -57,6 +57,16 @@ API Server #  Receives all incoming API requests and is the frontend to K8s clus
     </item>
     
     <item>
+      <title>Stock Options</title>
+      <link>http://blog.svohra.com/posts/canada/stock-options/</link>
+      <pubDate>Sun, 15 Apr 2018 16:15:29 -0400</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/canada/stock-options/</guid>
+      <description>I was working at the Canadian branch of a US tech company and part of my compensation was in the form of stock options so I was curious in understanding how they were taxed.
+Taxes on stock options are calculated based on the delta between Excercise Price and Strike Price. 50 % of the delta is taxed as income Stock Option Deduction. So, they are taxed at the same rate as capital gains.</description>
+    </item>
+    
+    <item>
       <title>Drives, Volumes, Disks &amp; Partitions</title>
       <link>http://blog.svohra.com/posts/drives-volumes-disks-partitions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
