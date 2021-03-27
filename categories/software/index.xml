@@ -6,7 +6,29 @@
     <description>Recent content in Software on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Dec 2020 18:12:21 -0500</lastBuildDate><atom:link href="http://blog.svohra.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 14:03:10 -0500</lastBuildDate><atom:link href="http://blog.svohra.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>http://blog.svohra.com/posts/golang/</link>
+      <pubDate>Thu, 04 Mar 2021 14:03:10 -0500</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/golang/</guid>
+      <description>Testing #   Go advises not comparing functions. Testify follows suit and advises against it.  </description>
+    </item>
+    
+    <item>
+      <title>Create a K8s CRD</title>
+      <link>http://blog.svohra.com/posts/create-k8s-crd/</link>
+      <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/create-k8s-crd/</guid>
+      <description>Create a K8s CRD #  This summarizes the tutorial referenced below &amp;amp; Knative Controllers as a quick review
+Scafold the new CRD #  kubebuilder create api --group batch --version v1 --kind CronJob
+Define The Object #  Look under {apis|api/v1}/{groupName}/{objectName}_types.go contains K8s Object.Spec and Object.Status
+Update the Spec &amp;amp; Status sections
+Add the Business Logic #  Implement the logic to convert desired state defined in the spec to the actual state reflected in the status.</description>
+    </item>
+    
     <item>
       <title>Inclusive Leadership</title>
       <link>http://blog.svohra.com/posts/diversity-inclusion/inclusive-leadership/</link>
@@ -85,6 +107,17 @@ Alyship #   is defined in the moment, not a badge that can be worn the stance ta
     </item>
     
     <item>
+      <title>Drives, Volumes, Disks &amp; Partitions</title>
+      <link>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</link>
+      <pubDate>Fri, 18 Oct 2019 14:45:21 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</guid>
+      <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
+Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
+Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.</description>
+    </item>
+    
+    <item>
       <title>Shell Commands</title>
       <link>http://blog.svohra.com/posts/software/cmd/</link>
       <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
@@ -96,17 +129,6 @@ Alyship #   is defined in the moment, not a badge that can be worn the stance ta
   Filter results awk &#39;/search_pattern/ {print $2 $1}&#39;
  $1 refers to column 1 &amp;amp; $2 refers to column 2, starting from index 0    Search #    Find File find path_to_search -name &amp;quot;*.txt&amp;quot; 
  -not to inverse results -maxdepth some_int to limit depth of search -size +1M find files larger than 1 MB -type f|d find files or directories `-exec grep -n -i &amp;ldquo;foo&amp;rdquo;    Grep grep -i &amp;quot;string_to_be_searched&amp;quot; path_to_search</description>
-    </item>
-    
-    <item>
-      <title>Drives, Volumes, Disks &amp; Partitions</title>
-      <link>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</guid>
-      <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
-Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
-Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.</description>
     </item>
     
   </channel>

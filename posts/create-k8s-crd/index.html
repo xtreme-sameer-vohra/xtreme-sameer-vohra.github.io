@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.80.0" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Create a K8s CRD #  This summarizes the tutorial referenced below &amp; Knative Controllers as a quick review
+Scafold the new CRD #  kubebuilder create api --group batch --version v1 --kind CronJob
+Define The Object #  Look under {apis|api/v1}/{groupName}/{objectName}_types.go contains K8s Object.Spec and Object.Status
+Update the Spec &amp; Status sections
+Add the Business Logic #  Implement the logic to convert desired state defined in the spec to the actual state reflected in the status.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Create a K8s CRD" />
+<meta property="og:description" content="Create a K8s CRD #  This summarizes the tutorial referenced below &amp; Knative Controllers as a quick review
+Scafold the new CRD #  kubebuilder create api --group batch --version v1 --kind CronJob
+Define The Object #  Look under {apis|api/v1}/{groupName}/{objectName}_types.go contains K8s Object.Spec and Object.Status
+Update the Spec &amp; Status sections
+Add the Business Logic #  Implement the logic to convert desired state defined in the spec to the actual state reflected in the status." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.svohra.com/posts/create-k8s-crd/" />
+<meta property="article:published_time" content="2021-02-04T14:45:21-06:00" />
+<meta property="article:modified_time" content="2021-02-04T14:45:21-06:00" />
+<title>Create a K8s CRD | Personal Blog</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
+<script defer src="/en.search.min.e9e36aa1fbc3cbb7bf5ce2b5beab4339395dffdc26b3f5f9371f0abb444fe060.js" integrity="sha256-6eNqofvDy7e/XOK1vqtDOTld/9wms/X5Nx8Ku0RP4GA="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Personal Blog</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Create a K8s CRD</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#scafold-the-new-crd">Scafold the new CRD</a></li>
+    <li><a href="#define-the-object">Define The Object</a></li>
+    <li><a href="#add-the-business-logic">Add the Business Logic</a></li>
+    <li><a href="#knative">Knative</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/create-k8s-crd/">Create a K8s CRD</a>
+  </h1>
+  
+  <h5>February 4, 2021</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/software/">Software</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/tech/">Tech</a>, 
+      <a href="/tags/storage/">Storage</a>
+  </div>
+  
+
+
+  <p><h1 id="create-a-k8s-crd">
+  Create a K8s CRD
+  <a class="anchor" href="#create-a-k8s-crd">#</a>
+</h1>
+<p>This summarizes the tutorial referenced below &amp; Knative Controllers as a quick review</p>
+<h2 id="scafold-the-new-crd">
+  Scafold the new CRD
+  <a class="anchor" href="#scafold-the-new-crd">#</a>
+</h2>
+<p><code>kubebuilder create api --group batch --version v1 --kind CronJob</code></p>
+<h2 id="define-the-object">
+  Define The Object
+  <a class="anchor" href="#define-the-object">#</a>
+</h2>
+<p>Look under <code>{apis|api/v1}/{groupName}/{objectName}_types.go</code>
+contains K8s Object.Spec and Object.Status</p>
+<p>Update the Spec &amp; Status sections</p>
+<h2 id="add-the-business-logic">
+  Add the Business Logic
+  <a class="anchor" href="#add-the-business-logic">#</a>
+</h2>
+<p>Implement the logic to convert desired state defined in the <code>spec</code> to the actual state reflected in the <code>status</code>.</p>
+<p>This is done in the controller&rsquo;s <code>Reconcile</code> function.</p>
+<h2 id="knative">
+  Knative
+  <a class="anchor" href="#knative">#</a>
+</h2>
+<ul>
+<li>The above guide is roughly the same with some caveats (TODO fill those out)</li>
+</ul>
+<p><strong>References</strong></p>
+<ul>
+<li><a href="https://book.kubebuilder.io/">Kubebuilder Tutorial</a></li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#scafold-the-new-crd">Scafold the new CRD</a></li>
+    <li><a href="#define-the-object">Define The Object</a></li>
+    <li><a href="#add-the-business-logic">Add the Business Logic</a></li>
+    <li><a href="#knative">Knative</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

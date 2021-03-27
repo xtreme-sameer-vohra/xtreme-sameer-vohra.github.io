@@ -5,11 +5,25 @@
     <link>http://blog.svohra.com/tags/storage/</link>
     <description>Recent content in Storage on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://blog.svohra.com/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Thu, 04 Feb 2021 14:45:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create a K8s CRD</title>
+      <link>http://blog.svohra.com/posts/create-k8s-crd/</link>
+      <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/create-k8s-crd/</guid>
+      <description>Create a K8s CRD #  This summarizes the tutorial referenced below &amp;amp; Knative Controllers as a quick review
+Scafold the new CRD #  kubebuilder create api --group batch --version v1 --kind CronJob
+Define The Object #  Look under {apis|api/v1}/{groupName}/{objectName}_types.go contains K8s Object.Spec and Object.Status
+Update the Spec &amp;amp; Status sections
+Add the Business Logic #  Implement the logic to convert desired state defined in the spec to the actual state reflected in the status.</description>
+    </item>
+    
     <item>
       <title>Drives, Volumes, Disks &amp; Partitions</title>
       <link>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 18 Oct 2019 14:45:21 -0600</pubDate>
       
       <guid>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</guid>
       <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
