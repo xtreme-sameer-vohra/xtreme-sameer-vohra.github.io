@@ -6,22 +6,22 @@
     <description>Recent content in Tags on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 14:03:10 -0500</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tech</title>
-      <link>http://blog.svohra.com/tags/tech/</link>
-      <pubDate>Thu, 04 Mar 2021 14:03:10 -0500</pubDate>
-      
-      <guid>http://blog.svohra.com/tags/tech/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Feb 2021 14:45:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Storage</title>
       <link>http://blog.svohra.com/tags/storage/</link>
       <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
       
       <guid>http://blog.svohra.com/tags/storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>http://blog.svohra.com/tags/tech/</link>
+      <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/tech/</guid>
       <description></description>
     </item>
     

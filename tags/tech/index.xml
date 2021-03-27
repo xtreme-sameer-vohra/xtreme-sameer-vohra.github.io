@@ -6,16 +6,7 @@
     <description>Recent content in Tech on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Mar 2021 14:03:10 -0500</lastBuildDate><atom:link href="http://blog.svohra.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Go</title>
-      <link>http://blog.svohra.com/posts/golang/</link>
-      <pubDate>Thu, 04 Mar 2021 14:03:10 -0500</pubDate>
-      
-      <guid>http://blog.svohra.com/posts/golang/</guid>
-      <description>Testing #   Go advises not comparing functions. Testify follows suit and advises against it.  </description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Feb 2021 14:45:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create a K8s CRD</title>
       <link>http://blog.svohra.com/posts/create-k8s-crd/</link>
