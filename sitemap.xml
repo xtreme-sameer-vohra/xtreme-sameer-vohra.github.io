@@ -4,7 +4,57 @@
   
   <url>
     <loc>http://blog.svohra.com/categories/</loc>
-    <lastmod>2021-02-04T14:45:21-06:00</lastmod>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/k3s/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/knative/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/kubernetes/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/posts/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/raspberry-pi/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/categories/software/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.svohra.com/tags/tech/</loc>
+    <lastmod>2021-08-27T20:50:37-06:00</lastmod>
   </url>
   
   <url>
@@ -13,32 +63,7 @@
   </url>
   
   <url>
-    <loc>http://blog.svohra.com/</loc>
-    <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.svohra.com/posts/</loc>
-    <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.svohra.com/categories/software/</loc>
-    <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://blog.svohra.com/tags/storage/</loc>
-    <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.svohra.com/tags/</loc>
-    <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.svohra.com/tags/tech/</loc>
     <lastmod>2021-02-04T14:45:21-06:00</lastmod>
   </url>
   
@@ -69,11 +94,6 @@
   
   <url>
     <loc>http://blog.svohra.com/posts/software/ckad-exam-prep/</loc>
-    <lastmod>2020-11-07T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.svohra.com/tags/kubernetes/</loc>
     <lastmod>2020-11-07T20:50:37-06:00</lastmod>
   </url>
   

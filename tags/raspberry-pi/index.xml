@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi on Personal Blog</title>
+    <link>http://blog.svohra.com/tags/raspberry-pi/</link>
+    <description>Recent content in Raspberry Pi on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Aug 2021 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RPi with K3S with Knative</title>
+      <link>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</link>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</guid>
+      <description>The process #  Use Raspberry Pi OS #  Install OS #   Download the Raspberry Pi OS Lite OS, extract the zip file Install it to the SD Card Instructions  diskutil list` # Get disk# diskutil unmountDisk /dev/diskN sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync sudo diskutil eject /dev/rdiskN replacing N with the disk number
+SSH #  Connect the SD Card again
+ For SSH sudo touch /Volumes/boot/ssh For Wifi link  ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; update_config=1 network={ ssid=&amp;quot;&amp;lt;Name of your wireless LAN&amp;gt;&amp;quot; psk=&amp;quot;&amp;lt;Password for your wireless LAN&amp;gt;&amp;quot; } into /Volumes/boot/wpa_supplicant.</description>
+    </item>
+    
+  </channel>
+</rss>

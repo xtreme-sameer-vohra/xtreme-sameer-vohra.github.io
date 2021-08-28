@@ -6,22 +6,58 @@
     <description>Recent content in Tags on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 14:45:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Storage</title>
-      <link>http://blog.svohra.com/tags/storage/</link>
-      <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
+      <title>K3S</title>
+      <link>http://blog.svohra.com/tags/k3s/</link>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/tags/storage/</guid>
+      <guid>http://blog.svohra.com/tags/k3s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Knative</title>
+      <link>http://blog.svohra.com/tags/knative/</link>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/knative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://blog.svohra.com/tags/kubernetes/</link>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raspberry Pi</title>
+      <link>http://blog.svohra.com/tags/raspberry-pi/</link>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/raspberry-pi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tech</title>
       <link>http://blog.svohra.com/tags/tech/</link>
-      <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
       
       <guid>http://blog.svohra.com/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Storage</title>
+      <link>http://blog.svohra.com/tags/storage/</link>
+      <pubDate>Thu, 04 Feb 2021 14:45:21 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/storage/</guid>
       <description></description>
     </item>
     
@@ -49,15 +85,6 @@
       <pubDate>Sat, 07 Nov 2020 20:50:37 -0600</pubDate>
       
       <guid>http://blog.svohra.com/tags/ckad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>http://blog.svohra.com/tags/kubernetes/</link>
-      <pubDate>Sat, 07 Nov 2020 20:50:37 -0600</pubDate>
-      
-      <guid>http://blog.svohra.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     

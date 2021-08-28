@@ -6,7 +6,18 @@
     <description>Recent content in Posts on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 04 Feb 2021 14:45:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 Aug 2021 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RPi with K3S with Knative</title>
+      <link>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</link>
+      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</guid>
+      <description>The process #  Use Raspberry Pi OS #  Install OS #   Download the Raspberry Pi OS Lite OS, extract the zip file Install it to the SD Card Instructions  diskutil list` # Get disk# diskutil unmountDisk /dev/diskN sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync sudo diskutil eject /dev/rdiskN replacing N with the disk number
+SSH #  Connect the SD Card again
+ For SSH sudo touch /Volumes/boot/ssh For Wifi link  ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev country=&amp;lt;Insert 2 letter ISO 3166-1 country code here&amp;gt; update_config=1 network={ ssid=&amp;quot;&amp;lt;Name of your wireless LAN&amp;gt;&amp;quot; psk=&amp;quot;&amp;lt;Password for your wireless LAN&amp;gt;&amp;quot; } into /Volumes/boot/wpa_supplicant.</description>
+    </item>
+    
     <item>
       <title>Create a K8s CRD</title>
       <link>http://blog.svohra.com/posts/create-k8s-crd/</link>
@@ -27,7 +38,7 @@ Add the Business Logic #  Implement the logic to convert desired state defined i
       
       <guid>http://blog.svohra.com/posts/diversity-inclusion/inclusive-leadership/</guid>
       <description>These are my notes from session on Inclusive Leadership at VMware
-Diversity #   visible traits and invisible traits (eg. religion)  Inclusion #   Cognizance bias is a achillles heel Courage talking about imperfections takes risk taking Commitment staying the course is hard Curiosity Cultural Intelligence Collaboration  In Groups #   set the rules/norms in a culture often unaware of their privilege  Out Groups #   work hard to fit in less power  Pschological Safety #   Amy Edmonson Sense of confidence that the team will not embarass, reject or punish someone for speaking up Shared beleif that the team is safe for interpersonal risk taking Notice when you&amp;rsquo;re contributing to in-group/out-group behaviours  Create Pysch safety #   encourage conversational turn-taking be empathetic and socially sensitve  Micro aggressions #   they are suble discrimination that reflects painful stereotypes, practices, policies and world views  analogy of mosquito bites  1 bite is annoying constant biting over a long period of time is debilitating     admit they exist ask difficult questions show peers that it is unacceptable - call them out microaffirmations can counter microaggessions recognize that microagressions reflect painful, deeply embedded stereotypes, practices, policies, and worldviews  Covering #   hiding a unfavored trait/identity to fit in appearance based affiliation based  Privilege #   system advantage or privileged isnt so much about what you have, but what you dont have to think about  </description>
+Diversity #   visible traits and invisible traits/dimensions of our identity (eg. religion)  URMs #  minorities - black, latam, american indians, native alaskans, pacific islanders /hawaiaans  URGs #  groups  Equity #  distribution of resources to address systemic barriers and support equal outcomes vs. equality is everyone gets the same thing (eg. notebook + pen vs laptops for devs, etc) equal is not equitable (meat to a room that includes vegetarians)  Inclusion #   Cognizance bias is a achillles heel Humility - i am biased but want to improve Empathy - prespective taking Courage talking about imperfections takes risk taking Commitment staying the course is hard Curiosity Cultural Intelligence Collaboration  In Groups #   set the rules/norms in a culture often unaware of their privilege  Out Groups #   work hard to fit in less power  Pschological Safety #   Amy Edmonson Sense of confidence that the team will not embarass, reject or punish someone for speaking up Shared beleif that the team is safe for interpersonal risk taking Notice when you&amp;rsquo;re contributing to in-group/out-group behaviours  Create Pysch safety #   encourage conversational turn-taking be empathetic and socially sensitve  Micro aggressions #   they are suble discrimination that reflects painful stereotypes, practices, policies and world views  analogy of mosquito bites  1 bite is annoying constant biting over a long period of time is debilitating     admit they exist ask difficult questions show peers that it is unacceptable - call them out microaffirmations can counter microaggessions recognize that microagressions reflect painful, deeply embedded stereotypes, practices, policies, and worldviews if bias is &amp;ldquo;what&amp;rdquo;; microaggressions are the &amp;ldquo;how&amp;rdquo;  Covering #   hiding a unfavored trait/identity to fit in appearance based affiliation based emotional tax - the state of being on guard  intersectionality #  no one is defined by a single category  Privilege #   system advantage or privileged isnt so much about what you have, but what you dont have to think about  </description>
     </item>
     
     <item>
