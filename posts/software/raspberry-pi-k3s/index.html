@@ -19,7 +19,7 @@ Install OS #   Download the Ubuntu OS, extract the zip file Install it to the SD
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e935e20bd0d469378cb482f0958edf258c731a4f895dccd55799c6fbc8043f23.css" integrity="sha256-6TXiC9DUaTeMtILwlY7fJYxzGk&#43;JXczVV5nG&#43;8gEPyM=">
-<script defer src="/en.search.min.53d1d69656f2f42c180ce45706c22dc14916d8918dd7235521d76718b8fcbad1.js" integrity="sha256-U9HWllby9CwYDORXBsItwUkW2JGN1yNVIddnGLj8utE="></script>
+<script defer src="/en.search.min.a79e6449e2025bcc038c4b4bd05569d985f9c8caf8682c77ebaa2db70a65cb29.js" integrity="sha256-p55kSeICW8wDjEtL0FVp2YX5yMr4aCx366ottwplyyk="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -110,8 +110,9 @@ https://github.com/alex-shpak/hugo-book
     <li><a href="#use-ubuntu-server-64-bit-os">Use Ubuntu Server 64 bit OS</a>
       <ul>
         <li><a href="#install-os">Install OS</a></li>
+        <li><a href="#wifi">Wifi</a></li>
+        <li><a href="#boot">Boot</a></li>
         <li><a href="#ssh">SSH</a></li>
-        <li><a href="#boot-up-the-rpi">Boot up the RPi</a></li>
         <li><a href="#setup-for-k3s">Setup for K3S</a></li>
       </ul>
     </li>
@@ -177,44 +178,38 @@ diskutil unmountDisk /dev/diskN
 sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync
 sudo diskutil eject /dev/rdiskN
 </code></pre><p>replacing <code>N</code> with the disk number</p>
+<h3 id="wifi">
+  Wifi
+  <a class="anchor" href="#wifi">#</a>
+</h3>
+<ul>
+<li>Follow <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet">instructions</a> on Ubuntu</li>
+</ul>
+<h3 id="boot">
+  Boot
+  <a class="anchor" href="#boot">#</a>
+</h3>
+<ul>
+<li>Boot the Rpi. Reboot to get it to connect to wifi</li>
+<li>Setup new password</li>
+</ul>
 <h3 id="ssh">
   SSH
   <a class="anchor" href="#ssh">#</a>
 </h3>
-<p>Connect the SD Card again</p>
 <ul>
-<li>For SSH <code>sudo touch /Volumes/boot/ssh</code></li>
-<li>For Wifi <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet">link</a>, edit <code>network-config</code> in the root directory</li>
-</ul>
-<h3 id="boot-up-the-rpi">
-  Boot up the RPi
-  <a class="anchor" href="#boot-up-the-rpi">#</a>
-</h3>
-<ul>
-<li>SSH onto the RPi <code>ssh pi@raspberrypi.local</code> #password is raspberry</li>
-<li>Use <code>sudo raspi-config</code>
-<ul>
-<li>Change passwd</li>
-<li>Change hostname</li>
-<li>Change GPU Mem to 16</li>
-</ul>
-</li>
-<li>Setup an ssh key
-<ul>
-<li><code>ssh-keygen</code></li>
-<li><code>ssh-copy-id -i SOME_KEY_PUB_FILE pi@raspberrypi.local</code></li>
-</ul>
-</li>
+<li>Add public key to ~/.ssh/authorized_keys using <code>ssh-copy-id</code></li>
 </ul>
 <h3 id="setup-for-k3s">
   Setup for K3S
   <a class="anchor" href="#setup-for-k3s">#</a>
 </h3>
 <p><a href="https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/">Reference Instructions</a>
-<a href="https://williamlam.com/2021/01/veba-knative-k3s-on-esxi-arm.html">Reference Instructions 2</a></p>
+<a href="https://williamlam.com/2021/01/veba-knative-k3s-on-esxi-arm.html">Reference Instructions 2</a>
+<a href="https://medium.com/icetek/building-a-kubernetes-cluster-on-raspberry-pi-running-ubuntu-server-8fc4edb30963">Reference Instructions 3</a></p>
 <ul>
 <li>
-<p>Edit <code>/boot/cmdline.txt</code></p>
+<p>Edit <code>/boot/firmware/nobtcmd.txt</code> (Aside: on Raspberry Pi OS its <code>/boot/cmdline.txt</code>)</p>
 <pre tabindex="0"><code>cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
 </code></pre><p>add to the end of the line and reboot.</p>
 </li>
@@ -267,8 +262,9 @@ sudo diskutil eject /dev/rdiskN
     <li><a href="#use-ubuntu-server-64-bit-os">Use Ubuntu Server 64 bit OS</a>
       <ul>
         <li><a href="#install-os">Install OS</a></li>
+        <li><a href="#wifi">Wifi</a></li>
+        <li><a href="#boot">Boot</a></li>
         <li><a href="#ssh">SSH</a></li>
-        <li><a href="#boot-up-the-rpi">Boot up the RPi</a></li>
         <li><a href="#setup-for-k3s">Setup for K3S</a></li>
       </ul>
     </li>
