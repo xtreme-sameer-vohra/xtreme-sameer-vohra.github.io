@@ -2,25 +2,24 @@
 <html lang="en" dir=>
 
 <head>
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.88.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The process #  Use Raspberry Pi OS #  Install OS #   Download the Raspberry Pi OS Lite OS, extract the zip file Install it to the SD Card Instructions  diskutil list` # Get disk# diskutil unmountDisk /dev/diskN sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync sudo diskutil eject /dev/rdiskN replacing N with the disk number
-SSH #  Connect the SD Card again
- For SSH sudo touch /Volumes/boot/ssh For Wifi link  ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev country=&lt;Insert 2 letter ISO 3166-1 country code here&gt; update_config=1 network={ ssid=&quot;&lt;Name of your wireless LAN&gt;&quot; psk=&quot;&lt;Password for your wireless LAN&gt;&quot; } into /Volumes/boot/wpa_supplicant.">
+<meta name="description" content="The process #  Use Ubuntu Server 64 bit OS #  The Rasberry Pi OS is 32 bit and wont work for Envoy which only has arm64 images available.
+Install OS #   Download the Ubuntu OS, extract the zip file Install it to the SD Card Instructions  diskutil list # Get disk# diskutil unmountDisk /dev/diskN sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync sudo diskutil eject /dev/rdiskN replacing N with the disk number">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="RPi with K3S with Knative" />
-<meta property="og:description" content="The process #  Use Raspberry Pi OS #  Install OS #   Download the Raspberry Pi OS Lite OS, extract the zip file Install it to the SD Card Instructions  diskutil list` # Get disk# diskutil unmountDisk /dev/diskN sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync sudo diskutil eject /dev/rdiskN replacing N with the disk number
-SSH #  Connect the SD Card again
- For SSH sudo touch /Volumes/boot/ssh For Wifi link  ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev country=&lt;Insert 2 letter ISO 3166-1 country code here&gt; update_config=1 network={ ssid=&quot;&lt;Name of your wireless LAN&gt;&quot; psk=&quot;&lt;Password for your wireless LAN&gt;&quot; } into /Volumes/boot/wpa_supplicant." />
+<meta property="og:description" content="The process #  Use Ubuntu Server 64 bit OS #  The Rasberry Pi OS is 32 bit and wont work for Envoy which only has arm64 images available.
+Install OS #   Download the Ubuntu OS, extract the zip file Install it to the SD Card Instructions  diskutil list # Get disk# diskutil unmountDisk /dev/diskN sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync sudo diskutil eject /dev/rdiskN replacing N with the disk number" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://blog.svohra.com/posts/software/raspberry-pi-k3s/" />
+<meta property="og:url" content="http://blog.svohra.com/posts/software/raspberry-pi-k3s/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-08-27T20:50:37-06:00" />
 <meta property="article:modified_time" content="2021-08-27T20:50:37-06:00" />
+
 <title>RPi with K3S with Knative | Personal Blog</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.6c7c6446dfdee7c8c933e9bbc6e80ee3ed6c913b2a59519f2092c3c6a9d63e55.css" integrity="sha256-bHxkRt/e58jJM&#43;m7xugO4&#43;1skTsqWVGfIJLDxqnWPlU=">
-<script defer src="/en.search.min.d57b95d27229a3513aca93e45537716c9cc2a3ae7936a292a375f8589f0e9ba9.js" integrity="sha256-1XuV0nIpo1E6ypPkVTdxbJzCo655NqKSo3X4WJ8Om6k="></script>
+<link rel="stylesheet" href="/book.min.e935e20bd0d469378cb482f0958edf258c731a4f895dccd55799c6fbc8043f23.css" integrity="sha256-6TXiC9DUaTeMtILwlY7fJYxzGk&#43;JXczVV5nG&#43;8gEPyM=">
+<script defer src="/en.search.min.53d1d69656f2f42c180ce45706c22dc14916d8918dd7235521d76718b8fcbad1.js" integrity="sha256-U9HWllby9CwYDORXBsItwUkW2JGN1yNVIddnGLj8utE="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -77,7 +76,7 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
@@ -108,7 +107,7 @@ https://github.com/alex-shpak/hugo-book
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#use-raspberry-pi-os">Use Raspberry Pi OS</a>
+    <li><a href="#use-ubuntu-server-64-bit-os">Use Ubuntu Server 64 bit OS</a>
       <ul>
         <li><a href="#install-os">Install OS</a></li>
         <li><a href="#ssh">SSH</a></li>
@@ -160,19 +159,20 @@ https://github.com/alex-shpak/hugo-book
   The process
   <a class="anchor" href="#the-process">#</a>
 </h1>
-<h2 id="use-raspberry-pi-os">
-  Use Raspberry Pi OS
-  <a class="anchor" href="#use-raspberry-pi-os">#</a>
+<h2 id="use-ubuntu-server-64-bit-os">
+  Use Ubuntu Server 64 bit OS
+  <a class="anchor" href="#use-ubuntu-server-64-bit-os">#</a>
 </h2>
+<p>The Rasberry Pi OS is 32 bit and wont work for Envoy which only has arm64 images available.</p>
 <h3 id="install-os">
   Install OS
   <a class="anchor" href="#install-os">#</a>
 </h3>
 <ul>
-<li>Download the <code>Raspberry Pi OS Lite</code> OS, extract the zip file</li>
+<li>Download the <a href="https://ubuntu.com/download/raspberry-pi">Ubuntu OS</a>, extract the zip file</li>
 <li>Install it to the SD Card <a href="https://www.raspberrypi.org/documentation/computers/getting-started.html#installing-images-on-mac-os">Instructions</a></li>
 </ul>
-<pre><code>diskutil list` # Get disk#
+<pre tabindex="0"><code>diskutil list # Get disk#
 diskutil unmountDisk /dev/diskN
 sudo dd bs=1m if=path_of_your_image.img of=/dev/rdiskN; sync
 sudo diskutil eject /dev/rdiskN
@@ -184,17 +184,8 @@ sudo diskutil eject /dev/rdiskN
 <p>Connect the SD Card again</p>
 <ul>
 <li>For SSH <code>sudo touch /Volumes/boot/ssh</code></li>
-<li>For Wifi <a href="https://www.raspberrypi.org/documentation/computers/configuration.html#configuring-networking-2">link</a></li>
+<li>For Wifi <a href="https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#3-wifi-or-ethernet">link</a>, edit <code>network-config</code> in the root directory</li>
 </ul>
-<pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-country=&lt;Insert 2 letter ISO 3166-1 country code here&gt;
-update_config=1
-
-network={
- ssid=&quot;&lt;Name of your wireless LAN&gt;&quot;
- psk=&quot;&lt;Password for your wireless LAN&gt;&quot;
-}
-</code></pre><p>into <code>/Volumes/boot/wpa_supplicant.conf</code></p>
 <h3 id="boot-up-the-rpi">
   Boot up the RPi
   <a class="anchor" href="#boot-up-the-rpi">#</a>
@@ -219,16 +210,18 @@ network={
   Setup for K3S
   <a class="anchor" href="#setup-for-k3s">#</a>
 </h3>
+<p><a href="https://blog.alexellis.io/test-drive-k3s-on-raspberry-pi/">Reference Instructions</a>
+<a href="https://williamlam.com/2021/01/veba-knative-k3s-on-esxi-arm.html">Reference Instructions 2</a></p>
 <ul>
 <li>
 <p>Edit <code>/boot/cmdline.txt</code></p>
-<pre><code>cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
+<pre tabindex="0"><code>cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory
 </code></pre><p>add to the end of the line and reboot.</p>
 </li>
 <li>
-<p>Install K3S</p>
-<pre><code>curl -sfL https://get.k3s.io | sh -
-  
+<p>Install K3S (without servicelb which interferes with Contour)</p>
+<pre tabindex="0"><code>curl -sfL https://get.k3s.io | sh -s - --disable servicelb
+
 </code></pre></li>
 <li>
 <p>The KUBECONFIG file is available at <code>/etc/rancher/k3s/k3s.yaml</code></p>
@@ -271,7 +264,7 @@ network={
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#use-raspberry-pi-os">Use Raspberry Pi OS</a>
+    <li><a href="#use-ubuntu-server-64-bit-os">Use Ubuntu Server 64 bit OS</a>
       <ul>
         <li><a href="#install-os">Install OS</a></li>
         <li><a href="#ssh">SSH</a></li>

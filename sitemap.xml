@@ -1,170 +1,104 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>http://blog.svohra.com/categories/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/k3s/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/knative/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/kubernetes/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/raspberry-pi/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/categories/software/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/tech/</loc>
     <lastmod>2021-08-27T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/create-k8s-crd/</loc>
     <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/storage/</loc>
     <lastmod>2021-02-04T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/inclusion/</loc>
     <lastmod>2020-12-15T18:12:21-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/diversity-inclusion/inclusive-leadership/</loc>
     <lastmod>2020-12-15T18:12:21-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/diversity/</loc>
     <lastmod>2020-11-12T18:12:21-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/diversity-inclusion/leaddev/</loc>
     <lastmod>2020-11-12T18:12:21-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/ckad/</loc>
     <lastmod>2020-11-07T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/software/ckad-exam-prep/</loc>
     <lastmod>2020-11-07T20:50:37-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/canada/</loc>
     <lastmod>2020-10-28T19:30:29-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/categories/finance/</loc>
     <lastmod>2020-10-28T19:30:29-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/usa/moving-canada-to-usa/</loc>
     <lastmod>2020-10-28T19:30:29-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/usa/</loc>
     <lastmod>2020-10-28T19:30:29-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/software/ckad-notes/</loc>
     <lastmod>2020-09-15T18:15:37-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/diversity-inclusion/resource-list/</loc>
     <lastmod>2020-05-25T18:30:24-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/diversity-inclusion/getting-real/</loc>
     <lastmod>2020-03-08T19:59:21-05:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/networking/</loc>
     <lastmod>2020-02-25T19:16:42-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/software/networking/</loc>
     <lastmod>2020-02-25T19:16:42-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/troubleshooting/</loc>
     <lastmod>2020-02-25T19:16:42-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/software/drives-volumes-disks-partitions/</loc>
     <lastmod>2019-10-18T14:45:21-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/tags/shell/</loc>
     <lastmod>2019-10-18T09:25:45-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/software/cmd/</loc>
     <lastmod>2019-10-18T09:25:45-06:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>http://blog.svohra.com/posts/canada/stock-options/</loc>
     <lastmod>2018-04-15T16:15:29-04:00</lastmod>
   </url>
-  
 </urlset>
