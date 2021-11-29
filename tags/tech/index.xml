@@ -6,7 +6,27 @@
     <description>Recent content in Tech on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Oct 2021 20:22:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/tech/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knative</title>
+      <link>http://blog.svohra.com/posts/software/knative/</link>
+      <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/knative/</guid>
+      <description>Knative #  Serving #  Label networking.knative.dev/visibility: cluster-local marks a Knative Service as private and accesible only ClusterIP. The default is to make the Knative Service publically accessible.
+Job https://github.com/knative/serving/releases/download/latest/serving-default-domain.yaml updates -n knative-serving cm/config-domain to add a default domain such as 34.145.71.17.sslip.io</description>
+    </item>
+    
+    <item>
+      <title>K8s Debugging</title>
+      <link>http://blog.svohra.com/posts/software/k8s-debugging/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/k8s-debugging/</guid>
+      <description>Get an ubuntu shell on a K8s cluster #  Run
+kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref</description>
+    </item>
+    
     <item>
       <title>RPi with K3S with Knative</title>
       <link>http://blog.svohra.com/posts/software/raspberry-pi-k3s/</link>

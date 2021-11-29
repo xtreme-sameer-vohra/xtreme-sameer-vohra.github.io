@@ -19,7 +19,7 @@ Install OS #   Download the Ubuntu OS, extract the zip file Install it to the SD
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.e935e20bd0d469378cb482f0958edf258c731a4f895dccd55799c6fbc8043f23.css" integrity="sha256-6TXiC9DUaTeMtILwlY7fJYxzGk&#43;JXczVV5nG&#43;8gEPyM=">
-<script defer src="/en.search.min.9d96aefd6a13d803b72a62a32ce291af9cd20e65c9f8111f598e9372fd6bac9b.js" integrity="sha256-nZau/WoT2AO3KmKjLOKRr5zSDmXJ&#43;BEfWY6Tcv1rrJs="></script>
+<script defer src="/en.search.min.dc8126710dd2a37ac8fd58d5d83db6a9dbbb5e2654a4bf8d42ad9ee47bfb718a.js" integrity="sha256-3IEmcQ3So3rI/VjV2D22qdu7XiZUpL&#43;NQq2e5Hv7cYo="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -223,9 +223,15 @@ sudo diskutil eject /dev/rdiskN
 <p>The KUBECONFIG file is available at <code>/etc/rancher/k3s/k3s.yaml</code>
 Simplify,</p>
 <pre tabindex="0"><code>ln -s /etc/rancher/k3s/k3s.yaml /root/.kube/config
-</code></pre></li>
+</code></pre><p>Copy the KUBECONFIG to your local machine - update the server IP and the &ldquo;default&rdquo; values &ldquo;rpi&rdquo;</p>
+</li>
 </ul>
-<h3 id="install-knative">
+<h4 id="shutdown-k3s">
+  Shutdown K3S
+  <a class="anchor" href="#shutdown-k3s">#</a>
+</h4>
+<pre tabindex="0"><code>sudo systemctl status k3s
+</code></pre><h3 id="install-knative">
   Install Knative
   <a class="anchor" href="#install-knative">#</a>
 </h3>

@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Aug 2021 20:50:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Oct 2021 20:22:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knative</title>
+      <link>http://blog.svohra.com/tags/knative/</link>
+      <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/knative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://blog.svohra.com/tags/kubernetes/</link>
+      <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>http://blog.svohra.com/tags/tech/</link>
+      <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/tech/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>K3S</title>
       <link>http://blog.svohra.com/tags/k3s/</link>
@@ -17,38 +44,11 @@
     </item>
     
     <item>
-      <title>Knative</title>
-      <link>http://blog.svohra.com/tags/knative/</link>
-      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
-      
-      <guid>http://blog.svohra.com/tags/knative/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>http://blog.svohra.com/tags/kubernetes/</link>
-      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
-      
-      <guid>http://blog.svohra.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Raspberry Pi</title>
       <link>http://blog.svohra.com/tags/raspberry-pi/</link>
       <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
       
       <guid>http://blog.svohra.com/tags/raspberry-pi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tech</title>
-      <link>http://blog.svohra.com/tags/tech/</link>
-      <pubDate>Fri, 27 Aug 2021 20:50:37 -0600</pubDate>
-      
-      <guid>http://blog.svohra.com/tags/tech/</guid>
       <description></description>
     </item>
     
