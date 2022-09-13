@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.88.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RabbitMQ #  A message broker; accepts and forwards messages Supports multiple protocols, of which AMQP 0-9-1 is one
+Queue #    Is a buffer that stores messages
+  A mailbox where producer(s) can send messages and consumer(s) can consume them from
+  Creating a queue is idempotent. A message to a non-existent queue is simply dropped by RabbitMQ
+  With configuration, unacknowledged messages by consumers will be redelivered (upone the initial consumer connection closing)">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="RabbitMQ" />
+<meta property="og:description" content="RabbitMQ #  A message broker; accepts and forwards messages Supports multiple protocols, of which AMQP 0-9-1 is one
+Queue #    Is a buffer that stores messages
+  A mailbox where producer(s) can send messages and consumer(s) can consume them from
+  Creating a queue is idempotent. A message to a non-existent queue is simply dropped by RabbitMQ
+  With configuration, unacknowledged messages by consumers will be redelivered (upone the initial consumer connection closing)" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://blog.svohra.com/posts/software/rabbitmq/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-27T15:22:37-06:00" />
+<meta property="article:modified_time" content="2022-03-27T15:22:37-06:00" />
+
+<title>RabbitMQ | Personal Blog</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.e935e20bd0d469378cb482f0958edf258c731a4f895dccd55799c6fbc8043f23.css" integrity="sha256-6TXiC9DUaTeMtILwlY7fJYxzGk&#43;JXczVV5nG&#43;8gEPyM=">
+<script defer src="/en.search.min.85c00e9a5f84952d72e7f776c994e681a86936a56bf13fc0d7e6801be37dc81a.js" integrity="sha256-hcAOml&#43;ElS1y5/d2yZTmgahpNqVr8T/A1&#43;aAG&#43;N9yBo="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Personal Blog</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li><a href="/posts/">Blog</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>RabbitMQ</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#queue">Queue</a></li>
+    <li><a href="#worker-queue">Worker Queue</a></li>
+    <li><a href="#exchange">Exchange</a>
+      <ul>
+        <li><a href="#direct-exchange">Direct Exchange</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+<article class="markdown">
+  <h1>
+    <a href="/posts/software/rabbitmq/">RabbitMQ</a>
+  </h1>
+  
+  <h5>March 27, 2022</h5>
+
+
+
+  
+  <div>
+    
+      <a href="/categories/software/">Software</a>
+  </div>
+  
+
+  
+  <div>
+    
+      <a href="/tags/tech/">Tech</a>, 
+      <a href="/tags/rabbitmq/">RabbitMQ</a>
+  </div>
+  
+
+
+  <p><h1 id="rabbitmq">
+  RabbitMQ
+  <a class="anchor" href="#rabbitmq">#</a>
+</h1>
+<p>A message broker; accepts and forwards messages
+Supports multiple protocols, of which AMQP 0-9-1 is one</p>
+<h2 id="queue">
+  Queue
+  <a class="anchor" href="#queue">#</a>
+</h2>
+<ul>
+<li>
+<p>Is a buffer that stores messages</p>
+</li>
+<li>
+<p>A mailbox where producer(s) can send messages and consumer(s) can consume them from</p>
+</li>
+<li>
+<p>Creating a queue is idempotent. A message to a non-existent queue is simply dropped by RabbitMQ</p>
+</li>
+<li>
+<p>With configuration, unacknowledged messages by consumers will be redelivered (upone the initial consumer connection closing)</p>
+</li>
+<li>
+<p>By default, queue is not durable. It needs to be declared as such to survived RabbitMQ restart.</p>
+</li>
+</ul>
+<h2 id="worker-queue">
+  Worker Queue
+  <a class="anchor" href="#worker-queue">#</a>
+</h2>
+<p>Or also known as task queue, allows one consumer to receive a message
+Used to distribute a task amongst many workers aka consumers
+Be default it round robbins the messages to the workers</p>
+<h2 id="exchange">
+  Exchange
+  <a class="anchor" href="#exchange">#</a>
+</h2>
+<ul>
+<li>
+<p>Producer cannot send messages directly to a Queue (they go via an Exchange)</p>
+</li>
+<li>
+<p>An exchange receives messages and sends them along to queue(s)</p>
+</li>
+<li>
+<p>Multiple types direct, topic, headers and fanout</p>
+</li>
+<li>
+<p>That relationship between exchange and a queue is called a binding.</p>
+</li>
+</ul>
+<h3 id="direct-exchange">
+  Direct Exchange
+  <a class="anchor" href="#direct-exchange">#</a>
+</h3>
+<ul>
+<li>The routing algorithm behind a direct exchange is simple - a message goes to the queues whose binding key exactly matches the routing key of the message.
+=======</li>
+</ul>
+<h1 id="notes">
+  Notes
+  <a class="anchor" href="#notes">#</a>
+</h1>
+<h2 id="overview">
+  Overview
+  <a class="anchor" href="#overview">#</a>
+</h2>
+<p><a href="https://www.rabbitmq.com/tutorials/amqp-concepts.html">AMQP Concepts</a></p>
+<ul>
+<li>Delivery processing acknowledgements from consumers to RabbitMQ are known as <strong>acknowledgements</strong> in messaging protocols</li>
+<li>Broker acknowledgements to publishers are a protocol extension called <strong>publisher confirms</strong></li>
+<li><code>basic.reject</code> and <code>basic.nack</code> are used for <strong>negative acknowledgements</strong>. The <strong>requeue</strong> boolean field controls if broker requeues the message or discard it.</li>
+<li>The Broker will attempt to place requeued messages in the original position if possible or close to the head of the queue.</li>
+</ul>
+</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#queue">Queue</a></li>
+    <li><a href="#worker-queue">Worker Queue</a></li>
+    <li><a href="#exchange">Exchange</a>
+      <ul>
+        <li><a href="#direct-exchange">Direct Exchange</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

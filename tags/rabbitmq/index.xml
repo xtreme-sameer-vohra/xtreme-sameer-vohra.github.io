@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RabbitMQ on Personal Blog</title>
+    <link>http://blog.svohra.com/tags/rabbitmq/</link>
+    <description>Recent content in RabbitMQ on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 27 Mar 2022 15:22:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RabbitMQ</title>
+      <link>http://blog.svohra.com/posts/software/rabbitmq/</link>
+      <pubDate>Sun, 27 Mar 2022 15:22:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/rabbitmq/</guid>
+      <description>RabbitMQ #  A message broker; accepts and forwards messages Supports multiple protocols, of which AMQP 0-9-1 is one
+Queue #    Is a buffer that stores messages
+  A mailbox where producer(s) can send messages and consumer(s) can consume them from
+  Creating a queue is idempotent. A message to a non-existent queue is simply dropped by RabbitMQ
+  With configuration, unacknowledged messages by consumers will be redelivered (upone the initial consumer connection closing)</description>
+    </item>
+    
+  </channel>
+</rss>

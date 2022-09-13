@@ -13,7 +13,7 @@
       <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
       
       <guid>http://blog.svohra.com/posts/software/knative/</guid>
-      <description>Knative #  Serving #  Label networking.knative.dev/visibility: cluster-local marks a Knative Service as private and accesible only ClusterIP. The default is to make the Knative Service publically accessible.
+      <description>Knative #  Serving #  Label networking.knative.dev/visibility: cluster-local marks a Knative Service as private and accesible only via ClusterIP. The default is to make the Knative Service publically accessible.
 Job https://github.com/knative/serving/releases/download/latest/serving-default-domain.yaml updates -n knative-serving cm/config-domain to add a default domain such as 34.145.71.17.sslip.io</description>
     </item>
     
@@ -24,7 +24,9 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
       
       <guid>http://blog.svohra.com/posts/software/k8s-debugging/</guid>
       <description>Get an ubuntu shell on a K8s cluster #  Run
-kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref</description>
+kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref
+Networking troubleshooting on a K8s cluster #  Run
+kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref</description>
     </item>
     
     <item>

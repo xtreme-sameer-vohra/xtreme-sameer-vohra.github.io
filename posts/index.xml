@@ -6,14 +6,36 @@
     <description>Recent content in Posts on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 Oct 2021 20:22:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 16 Aug 2022 20:15:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Knative Custom Domain &#43; AutoTLS</title>
+      <link>http://blog.svohra.com/posts/software/knative-custom-domain/</link>
+      <pubDate>Tue, 16 Aug 2022 20:15:21 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/knative-custom-domain/</guid>
+      <description>Steps #   Set domain name in config-domain configmap in knative-serving namespace. Get LB IP of Envoy k get svc -A. Pick the external IP address Configure DNS provider with A record *.&amp;lt;domain&amp;gt; (eg. *.snative.dev) -&amp;gt; IP address Deploy hello world and curl the url (Note: Browsers use https which isn&amp;rsquo;t configured yet.)  TLS using LetsEncrypt (Builds on steps above) #   Install cert-manager kubectl apply -f https://github.</description>
+    </item>
+    
+    <item>
+      <title>RabbitMQ</title>
+      <link>http://blog.svohra.com/posts/software/rabbitmq/</link>
+      <pubDate>Sun, 27 Mar 2022 15:22:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/rabbitmq/</guid>
+      <description>RabbitMQ #  A message broker; accepts and forwards messages Supports multiple protocols, of which AMQP 0-9-1 is one
+Queue #    Is a buffer that stores messages
+  A mailbox where producer(s) can send messages and consumer(s) can consume them from
+  Creating a queue is idempotent. A message to a non-existent queue is simply dropped by RabbitMQ
+  With configuration, unacknowledged messages by consumers will be redelivered (upone the initial consumer connection closing)</description>
+    </item>
+    
     <item>
       <title>Knative</title>
       <link>http://blog.svohra.com/posts/software/knative/</link>
       <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
       
       <guid>http://blog.svohra.com/posts/software/knative/</guid>
-      <description>Knative #  Serving #  Label networking.knative.dev/visibility: cluster-local marks a Knative Service as private and accesible only ClusterIP. The default is to make the Knative Service publically accessible.
+      <description>Knative #  Serving #  Label networking.knative.dev/visibility: cluster-local marks a Knative Service as private and accesible only via ClusterIP. The default is to make the Knative Service publically accessible.
 Job https://github.com/knative/serving/releases/download/latest/serving-default-domain.yaml updates -n knative-serving cm/config-domain to add a default domain such as 34.145.71.17.sslip.io</description>
     </item>
     
@@ -24,7 +46,27 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
       
       <guid>http://blog.svohra.com/posts/software/k8s-debugging/</guid>
       <description>Get an ubuntu shell on a K8s cluster #  Run
-kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref</description>
+kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref
+Networking troubleshooting on a K8s cluster #  Run
+kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref</description>
+    </item>
+    
+    <item>
+      <title>Measuring Health</title>
+      <link>http://blog.svohra.com/posts/software/measuring-health/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/measuring-health/</guid>
+      <description>Service Level Agreement - SLA #   commitment to maintain an SLI within a specific range over a period of time (including future)  Service Level Objective - SLO #   average of the SLI over time (past only) average of the SLI&amp;rsquo;s standard deviation over time  Service Level Indicator - SLI #   is the thing you&amp;rsquo;re measuring ?? a value at point in time  </description>
+    </item>
+    
+    <item>
+      <title>Pivotal Engineering Process</title>
+      <link>http://blog.svohra.com/posts/software/pivotal-process/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/pivotal-process/</guid>
+      <description>What is the process #  Comparing it to Agile #   working in a sprint (prioritized work + limited timed frame)  Comparing it to Kanban #   is about limiting multitasking ?? milestones don&amp;rsquo;t have a deadline  Engineers work on it until its done PMs can&amp;rsquo;t change prioritzation once work for a milestone begins    Issues #   Doesn&amp;rsquo;t map to the industry, making job/role transition trickier  </description>
     </item>
     
     <item>
