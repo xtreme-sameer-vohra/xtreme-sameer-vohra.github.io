@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on Personal Blog</title>
+    <link>http://blog.svohra.com/tags/documentation/</link>
+    <description>Recent content in Documentation on Personal Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 12 Sep 2021 21:20:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>http://blog.svohra.com/posts/software/documentation/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/documentation/</guid>
+      <description>Divio Unified Theory of Documentation #  Reference
+Documentation can be divided into 4 clear buckets, each of which serves a distinct purpose.
+Tutorials #   Its a cooking lesson, like teaching a child to cook. What you cook isn&amp;rsquo;t important, its getting them familiar with the process, getting them to enjoy it and want to doi t again. Using software, like cooking is a matter of craft - we learn by doing  How to guide #   Its like a recipe and assumes you already know basic cooking techniques and is helping you resolve a need  Reference #   Its like a encylopedia entry about a single ingredient - ginger.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -40,6 +40,17 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
     </item>
     
     <item>
+      <title>Documentation</title>
+      <link>http://blog.svohra.com/posts/software/documentation/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/documentation/</guid>
+      <description>Divio Unified Theory of Documentation #  Reference
+Documentation can be divided into 4 clear buckets, each of which serves a distinct purpose.
+Tutorials #   Its a cooking lesson, like teaching a child to cook. What you cook isn&amp;rsquo;t important, its getting them familiar with the process, getting them to enjoy it and want to doi t again. Using software, like cooking is a matter of craft - we learn by doing  How to guide #   Its like a recipe and assumes you already know basic cooking techniques and is helping you resolve a need  Reference #   Its like a encylopedia entry about a single ingredient - ginger.</description>
+    </item>
+    
+    <item>
       <title>K8s Debugging</title>
       <link>http://blog.svohra.com/posts/software/k8s-debugging/</link>
       <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
@@ -48,7 +59,9 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
       <description>Get an ubuntu shell on a K8s cluster #  Run
 kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref
 Networking troubleshooting on a K8s cluster #  Run
-kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref</description>
+kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref
+Decode K8s Docker Registry Secret #  Run
+k get secret/MY_SECRET_NAME -ojsonpath=&#39;{.data.\.dockerconfigjson}&#39; | base64 -D </description>
     </item>
     
     <item>

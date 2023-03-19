@@ -6,7 +6,25 @@
     <description>Recent content in Tags on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 20:15:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 12:26:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Organization</title>
+      <link>http://blog.svohra.com/tags/organization/</link>
+      <pubDate>Wed, 21 Sep 2022 12:26:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/organization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teams</title>
+      <link>http://blog.svohra.com/tags/teams/</link>
+      <pubDate>Wed, 21 Sep 2022 12:26:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/teams/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Knative</title>
       <link>http://blog.svohra.com/tags/knative/</link>
@@ -40,6 +58,24 @@
       <pubDate>Tue, 26 Oct 2021 20:22:37 -0600</pubDate>
       
       <guid>http://blog.svohra.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Documentation</title>
+      <link>http://blog.svohra.com/tags/documentation/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Information Architecture</title>
+      <link>http://blog.svohra.com/tags/information-architecture/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/tags/information-architecture/</guid>
       <description></description>
     </item>
     

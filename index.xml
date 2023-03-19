@@ -6,7 +6,16 @@
     <description>Recent content in Introduction on Personal Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 16 Aug 2022 20:15:21 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Sep 2022 12:26:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vision Purpose &amp; Mission</title>
+      <link>http://blog.svohra.com/posts/teams/measuring-health/</link>
+      <pubDate>Wed, 21 Sep 2022 12:26:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/teams/measuring-health/</guid>
+      <description>Vision #   Where your are going What future looks like if your goals are accomplished In &amp;ldquo;be, do, have&amp;rdquo;, its the &amp;ldquo;be&amp;rdquo;  Mission #   Actionable vision statement Answers &amp;ldquo;What&amp;rdquo;, &amp;ldquo;Who&amp;rdquo; &amp;amp; &amp;ldquo;Why&amp;rdquo; Define immediate goal and help stay focused on the plan In &amp;ldquo;be, do, have&amp;rdquo;, its the &amp;ldquo;do&amp;rdquo; - motivates you into acting  Purpose #   It ties vision &amp;amp; mission together It answers why we&amp;rsquo;re doing the work we&amp;rsquo;re doing  what will happen if we dont ?</description>
+    </item>
+    
     <item>
       <title>Knative Custom Domain &#43; AutoTLS</title>
       <link>http://blog.svohra.com/posts/software/knative-custom-domain/</link>
@@ -40,6 +49,17 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
     </item>
     
     <item>
+      <title>Documentation</title>
+      <link>http://blog.svohra.com/posts/software/documentation/</link>
+      <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/documentation/</guid>
+      <description>Divio Unified Theory of Documentation #  Reference
+Documentation can be divided into 4 clear buckets, each of which serves a distinct purpose.
+Tutorials #   Its a cooking lesson, like teaching a child to cook. What you cook isn&amp;rsquo;t important, its getting them familiar with the process, getting them to enjoy it and want to doi t again. Using software, like cooking is a matter of craft - we learn by doing  How to guide #   Its like a recipe and assumes you already know basic cooking techniques and is helping you resolve a need  Reference #   Its like a encylopedia entry about a single ingredient - ginger.</description>
+    </item>
+    
+    <item>
       <title>K8s Debugging</title>
       <link>http://blog.svohra.com/posts/software/k8s-debugging/</link>
       <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
@@ -48,7 +68,9 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
       <description>Get an ubuntu shell on a K8s cluster #  Run
 kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref
 Networking troubleshooting on a K8s cluster #  Run
-kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref</description>
+kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref
+Decode K8s Docker Registry Secret #  Run
+k get secret/MY_SECRET_NAME -ojsonpath=&#39;{.data.\.dockerconfigjson}&#39; | base64 -D </description>
     </item>
     
     <item>

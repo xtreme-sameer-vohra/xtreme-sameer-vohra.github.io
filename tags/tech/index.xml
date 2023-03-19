@@ -48,7 +48,9 @@ Job https://github.com/knative/serving/releases/download/latest/serving-default-
       <description>Get an ubuntu shell on a K8s cluster #  Run
 kubectl run my-temp-shell --rm -i --tty --image ubuntu -- bash Ref
 Networking troubleshooting on a K8s cluster #  Run
-kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref</description>
+kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot Ref
+Decode K8s Docker Registry Secret #  Run
+k get secret/MY_SECRET_NAME -ojsonpath=&#39;{.data.\.dockerconfigjson}&#39; | base64 -D </description>
     </item>
     
     <item>
