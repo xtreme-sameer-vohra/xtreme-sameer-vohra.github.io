@@ -63,7 +63,7 @@ k get secret/MY_SECRET_NAME -ojsonpath=&#39;{.data.\.dockerconfigjson}&#39; | ba
     </item>
     
     <item>
-      <title>Pivotal Engineering Process</title>
+      <title>Pivotal Engineering Process WIP</title>
       <link>http://blog.svohra.com/posts/software/pivotal-process/</link>
       <pubDate>Sun, 12 Sep 2021 21:20:37 -0600</pubDate>
       
