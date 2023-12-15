@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 21 Sep 2022 12:26:37 -0600</lastBuildDate><atom:link href="http://blog.svohra.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vision Purpose &amp; Mission</title>
-      <link>http://blog.svohra.com/posts/teams/measuring-health/</link>
+      <link>http://blog.svohra.com/posts/teams/vision-mission-purpose/</link>
       <pubDate>Wed, 21 Sep 2022 12:26:37 -0600</pubDate>
       
-      <guid>http://blog.svohra.com/posts/teams/measuring-health/</guid>
-      <description>Vision #   Where your are going What future looks like if your goals are accomplished In &amp;ldquo;be, do, have&amp;rdquo;, its the &amp;ldquo;be&amp;rdquo;  Mission #   Actionable vision statement Answers &amp;ldquo;What&amp;rdquo;, &amp;ldquo;Who&amp;rdquo; &amp;amp; &amp;ldquo;Why&amp;rdquo; Define immediate goal and help stay focused on the plan In &amp;ldquo;be, do, have&amp;rdquo;, its the &amp;ldquo;do&amp;rdquo; - motivates you into acting  Purpose #   It ties vision &amp;amp; mission together It answers why we&amp;rsquo;re doing the work we&amp;rsquo;re doing  what will happen if we dont ?</description>
+      <guid>http://blog.svohra.com/posts/teams/vision-mission-purpose/</guid>
+      <description>Vision #   Where your are going What the future looks like if your goals are accomplished In &amp;ldquo;be, do, have&amp;rdquo;, its the &amp;ldquo;be&amp;rdquo;  Mission #   Actionable vision statement Answers &amp;ldquo;What&amp;rdquo;, &amp;ldquo;Who&amp;rdquo; &amp;amp; &amp;ldquo;Why&amp;rdquo; Define immediate goal and help stay focused on the plan In &amp;ldquo;be, do, have&amp;rdquo;, its the &amp;ldquo;do&amp;rdquo; - motivates you into acting  Purpose #   It ties vision &amp;amp; mission together It answers why we&amp;rsquo;re doing the work we&amp;rsquo;re doing  what will happen if we dont ?</description>
     </item>
     
     <item>
@@ -210,6 +210,16 @@ Alyship #   is defined in the moment, not a badge that can be worn the stance ta
       <description>Drives, Volumes, Disks &amp;amp; Partitions #  Drive #  Physical storage device such as a hard disk, solid-state disk, removable USB flash drive etc. In Unix-like operating systems devices are represented by special file system objects called device nodes which are visible under the /dev directory
 Partions #  A physical storage device can be divided into multiple logical storage units known as partitions.
 Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM), which can be used to manage mass storage devices.</description>
+    </item>
+    
+    <item>
+      <title>Proxies</title>
+      <link>http://blog.svohra.com/posts/software/proxies/</link>
+      <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/proxies/</guid>
+      <description>Forward Proxy #  Forward proxy or proxy sits in front of a set of clients (eg. web broswers) and forwards requests to a server on the internet. Purpose is to filter content, block requests or protect identity of clients.
+Reverse Proxy #  A Reverse proxy sits in front of web servers and forward client (eg. web broswer) requests to the servers. Purpose is to increase security &amp;amp; performance of web service provided by the web servers.</description>
     </item>
     
     <item>

@@ -193,6 +193,16 @@ Volume #  The term volume in Linux is related to the Logical Volume Manager (LVM
     </item>
     
     <item>
+      <title>Proxies</title>
+      <link>http://blog.svohra.com/posts/software/proxies/</link>
+      <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
+      
+      <guid>http://blog.svohra.com/posts/software/proxies/</guid>
+      <description>Forward Proxy #  Forward proxy or proxy sits in front of a set of clients (eg. web broswers) and forwards requests to a server on the internet. Purpose is to filter content, block requests or protect identity of clients.
+Reverse Proxy #  A Reverse proxy sits in front of web servers and forward client (eg. web broswer) requests to the servers. Purpose is to increase security &amp;amp; performance of web service provided by the web servers.</description>
+    </item>
+    
+    <item>
       <title>Shell Commands</title>
       <link>http://blog.svohra.com/posts/software/cmd/</link>
       <pubDate>Fri, 18 Oct 2019 09:25:45 -0600</pubDate>
